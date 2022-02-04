@@ -11,8 +11,6 @@ const Navbar = styled.div`
     height: 3.5em;
     left: 0;
     top: 0;
-    position: fixed;
-    z-index: 100;
     border-bottom: solid 1px #2c2c2c;
     
     h1 {
