@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 
 // Styling details for the navbar
@@ -40,10 +41,10 @@ const Header = () => (
     <Navbar>
         <h1>Gombos_Andras</h1>
         <ul>
-            <li>about me</li>
-            <li>resume</li>
-            <li>projects</li>
-            <li>contact</li>
+            <li><Link to="/">about me</Link></li>
+            <li><Link to="/resume">resume</Link></li>
+            <li><Link to="/projects">projects</Link></li>
+            <li><Link to="/contact">contact</Link></li>
         </ul>
     </Navbar>
   </>
