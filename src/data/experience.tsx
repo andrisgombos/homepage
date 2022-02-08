@@ -7,7 +7,7 @@ const experience = [
         points: ''
     },
     {
-        company: 'SIT Academy (formerly Propulsion Academy)',
+        company: 'SIT Academye (formerly Propulsion Academy)',
         position: 'Full-Stack Developer',
         link: 'https://sit.academy/',
         date: 'February 2021 - May 2022',
