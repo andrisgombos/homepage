@@ -11,38 +11,50 @@ const Navbar = styled.div`
     flex-direction: row;
     height: 7vh;
     left: 0;
+    align-items: center;
     
-    h1 {
+    span {
         display: inline;
         font-size: 0.9em;
         padding: 0 0 0 1.5em;
+        font-weight: 100;
+        font-size: 1em;
     }
 
     ul {
-        width: 100%;
+        width: 30%;
         left: 0;
         display: flex;
-        color: blue;
+        justify-content: space-around;
         list-style: none;
         }
+
     li {
         margin-left: 1.5em;
         display: inline-block;
         padding-left: 0;
-        color: blue;
+        transition: all 0.2s ease;
     }
+
     
 `
+const StyledLink = styled(Link)`
+    text-decoration: none;
+
+    &:focus, &:hover, &:visited, &:StyledLink, &:active {
+        text-decoration: none;
+    }
+`;
 
 const Header = () => (
   <>
     <Navbar>
-        <h1><Link to="/">Gombos_Andras</Link></h1>
+        <span><StyledLink to="/">Gombos Andras</StyledLink></span>
         <ul>
-            <li><Link to="/about">about me</Link></li>
-            <li><Link to="/resume">resume</Link></li>
-            <li><Link to="/projects">projects</Link></li>
-            <li><Link to="/contact">contact</Link></li>
+            <li><StyledLink to="/about">about me</StyledLink></li>
+            <li><StyledLink to="/resume">resume</StyledLink></li>
+            <li><StyledLink to="/projects">projects</StyledLink></li>
+            <li><StyledLink to="/contact">contact</StyledLink></li>
         </ul>
     </Navbar>
   </>
