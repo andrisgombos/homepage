@@ -9,10 +9,8 @@ const Navbar = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 3.5em;
+    height: 7vh;
     left: 0;
-    top: 0;
-    border-bottom: solid 1px #2c2c2c;
     
     h1 {
         display: inline;
@@ -39,9 +37,9 @@ const Navbar = styled.div`
 const Header = () => (
   <>
     <Navbar>
-        <h1>Gombos_Andras</h1>
+        <h1><Link to="/">Gombos_Andras</Link></h1>
         <ul>
-            <li><Link to="/">about me</Link></li>
+            <li><Link to="/about">about me</Link></li>
             <li><Link to="/resume">resume</Link></li>
             <li><Link to="/projects">projects</Link></li>
             <li><Link to="/contact">contact</Link></li>
