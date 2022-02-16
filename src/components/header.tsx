@@ -6,12 +6,16 @@ import { Link } from 'react-router-dom';
 // Styling details for the navbar
 
 const Navbar = styled.div` 
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     height: 7vh;
     left: 0;
     align-items: center;
+    justify-content: flex-start;
+    // background-color: #F5F5F5;
+    position:relative;
+    float:left;
     
     span {
         display: inline;
@@ -19,6 +23,8 @@ const Navbar = styled.div`
         padding: 0 0 0 1.5em;
         font-weight: 100;
         font-size: 1em;
+        position:relative;
+        float:left;
     }
 
     ul {
@@ -27,13 +33,20 @@ const Navbar = styled.div`
         display: flex;
         justify-content: space-around;
         list-style: none;
+        position:relative;
+        float:left;
+        
         }
 
     li {
-        margin-left: 1.5em;
         display: inline-block;
         padding-left: 0;
         transition: all 0.2s ease;
+        border-left: 2px solid #F5DF4E;
+        padding-left: 1em;
+        position:relative;
+        float:left;
+        
     }
 
     
