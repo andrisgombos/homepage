@@ -2,14 +2,27 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from './header';
 import degrees from '../data/resume';
-import experience from '../data/experience';
+import xp from '../data/experience'
 import skills from '../data/skills';
+import { GlobalBackground } from '../styles/globalstyles';
+import Experience from './resume/experience';
 
 const ResumeContainer = styled.div`
-    `
+    height: 100%;
+    width: 85vw;
+    background-color: #F5F5F5;
 
-// const sections = [ degrees, experience]
+    li {
+        display: inline-block;
+        text-decoration: none;
+    }
 
+    div {
+        display: flex;
+        flex-direction: column;
+
+    }
+`
 
 
 const Resume = () => {
@@ -18,14 +31,18 @@ const Resume = () => {
     return (
      <>
         <Header/>
-        <ResumeContainer>
-            <div>Experience</div>
-            <div>{experience.map((e) => <li>{e.company} - {e.date} - {e.position}</li>)}</div>
-            <div>Education</div>
-            <div>{degrees.map((d) => <li>{d.school} - {d.degree} - {d.link} - {d.year}</li>)}</div>
-            <div>Skills</div>
-            <div>{skills}</div>
-        </ResumeContainer>
+        <GlobalBackground>
+            <ResumeContainer>
+                <h3>Experience</h3>
+                <div>
+                    {xp.map((job) => <Experience data={job} key={job.company}/>)}
+                </div>
+                <h3>Education</h3>
+                {/* <div>{degrees.map((d) => <li>{d.school} - {d.degree} - {d.link} - {d.year}</li>)}</div> */}
+                <h3>Skills</h3>
+                <div>{skills}</div>
+            </ResumeContainer>
+        </GlobalBackground>
     </>
 
     )

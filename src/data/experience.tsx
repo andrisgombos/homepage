@@ -1,7 +1,8 @@
-const experience = [
+const xp = [
     {
         company: 'NatWest Services (Switzerland) Ltd',
         position: 'IT Project Analyst',
+        location: 'Zurich',
         link: 'https://www.force-7.ch/',
         date: 'November 2021 - February 2022',
         points: ''
@@ -9,6 +10,7 @@ const experience = [
     {
         company: 'SIT Academye (formerly Propulsion Academy)',
         position: 'Full-Stack Developer',
+        location: 'Zurich',
         link: 'https://sit.academy/',
         date: 'February 2021 - May 2022',
         points: [
@@ -18,8 +20,9 @@ const experience = [
         ]
     },
     {
-        company: 'Diageo',
+        company: 'Diageo Plc',
         position: 'Pricing Controller',
+        location: 'Budapest',
         link: 'https://www.diageo.com/',
         date: 'November 2016 - December 2020',
         points: [
@@ -32,6 +35,7 @@ const experience = [
     {
         company: 'Diageo',
         position: 'Credit Controller',
+        location: 'Budapest',
         link: 'https://www.diageo.com/',
         date: 'November 2014 - October 2016',
         points: [
@@ -42,4 +46,4 @@ const experience = [
     },
 ];
 
-export default experience;
+export default xp;
