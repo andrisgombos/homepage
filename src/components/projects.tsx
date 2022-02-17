@@ -5,11 +5,13 @@ import Header from './header';
 import goesvideo from '../assets/goesvideo.mp4';
 import soc1 from '../assets/motion1.png'
 import soc2 from '../assets/motion2.png'
+import photo from '../assets/photosite.mp4'
+import luna1 from '../assets/luna1.png'
 
 const ProjectContainer = styled.div`
     width: 50%;
-    border-right: 2px solid #F5DF4E;
-    border-bottom: 2px solid #F5DF4E;
+    border-right: 4px solid #F5DF4E;
+    border-bottom: 4px solid #F5DF4E;
     padding: 2em;
     display: flex;
     flex-direction: column;
@@ -31,11 +33,23 @@ const PhotoContainer = styled.div`
         height: 300px;
     }
 `
+const TitleContainer = styled.div`
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
 
 const Projects = () => (
     <>
         <Header/>
         <GlobalBackground>
+            <TitleContainer>
+                <h2>Projects</h2>
+                <p>A glimpse look at some of my projects. All of them and more are accessible on my <a target='_blank' href='https://github.com/andrisgombos/'>Github</a> account.</p>
+            </TitleContainer>
             <DataContainer>
                 <ProjectContainer>
                     <h3>GOES project</h3>
@@ -52,11 +66,21 @@ const Projects = () => (
                     </PhotoContainer>
                 </ProjectContainer>
             </DataContainer>
-            {/* <DataContainer>
+            <DataContainer>
                 <ProjectContainer>
                     <h3>Photogram</h3>
+                    <VideoContainer controls autoPlay src={photo}/>
+                    <p>A photo share & upload application where users can keep their pictures like a virtual photo album.</p>
+                    <p>The application was built with React and JavaScript, the back end is provided by Google's Firebase.</p>
                 </ProjectContainer>
-            </DataContainer> */}
+                <ProjectContainer>
+                    <h3>Restaurant Project</h3>
+                    <PhotoContainer>
+                        <img src={luna1} alt='restaurant site preview'/>
+                        <p>Online restaurant platform where users can search, add, delete restaurants. They can also interact with each other, leaving comments on restaurants and rating them on previous experience.</p>
+                    </PhotoContainer>
+                </ProjectContainer>
+            </DataContainer>
         </GlobalBackground>
     </>
 )
