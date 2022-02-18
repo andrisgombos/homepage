@@ -7,10 +7,11 @@ import skills from '../data/skills';
 import { GlobalBackground, DataContainer } from '../styles/globalstyles';
 import Experience from './resume/experience';
 import Degree from './resume/degree';
+import StarRating from './resume/starrating';
 
 const ResumeContainer = styled.div`
     height: 100%;
-    width: 85vw;
+    width: 60vw;
     background-color: #F5F5F5;
 
     li {
@@ -53,15 +54,17 @@ const Resume = () => {
                     <div>
                         {degrees.map((d) => <Degree data={d} key={d.school}/>)}
                     </div>
-                    
                 </BracketContainer>
                 <BracketContainer>
                     <h3>Skills</h3>
-                    <ul>
+                    <div>
+                        {skills.map((s) => <StarRating rating={s} key={s.stars} />)}
+                    </div>
+                    {/* <ul>
                         {skills.map((s) => (
                             <li>{s}</li>
                         ))}
-                    </ul>
+                    </ul> */}
                 </BracketContainer>
             </ResumeContainer>
         </GlobalBackground>
