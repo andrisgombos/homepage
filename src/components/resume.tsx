@@ -4,8 +4,9 @@ import Header from './header';
 import degrees from '../data/resume';
 import xp from '../data/experience'
 import skills from '../data/skills';
-import { GlobalBackground } from '../styles/globalstyles';
+import { GlobalBackground, DataContainer } from '../styles/globalstyles';
 import Experience from './resume/experience';
+import Degree from './resume/degree';
 
 const ResumeContainer = styled.div`
     height: 100%;
@@ -23,7 +24,15 @@ const ResumeContainer = styled.div`
 
     }
 `
+const BracketContainer = styled.div`
+    width: 100%;
+    border-bottom: 4px solid #F5DF4E;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
 
+`
 
 const Resume = () => {
 
@@ -33,14 +42,27 @@ const Resume = () => {
         <Header/>
         <GlobalBackground>
             <ResumeContainer>
-                <h3>Experience</h3>
-                <div>
-                    {xp.map((job) => <Experience data={job} key={job.company}/>)}
-                </div>
-                <h3>Education</h3>
-                {/* <div>{degrees.map((d) => <li>{d.school} - {d.degree} - {d.link} - {d.year}</li>)}</div> */}
-                <h3>Skills</h3>
-                <div>{skills}</div>
+                <BracketContainer>
+                    <h3>Experience</h3>
+                    <div>
+                        {xp.map((job) => <Experience data={job} key={job.company}/>)}
+                    </div>
+                    </BracketContainer>
+                <BracketContainer>
+                    <h3>Education</h3>
+                    <div>
+                        {degrees.map((d) => <Degree data={d} key={d.school}/>)}
+                    </div>
+                    
+                </BracketContainer>
+                <BracketContainer>
+                    <h3>Skills</h3>
+                    <ul>
+                        {skills.map((s) => (
+                            <li>{s}</li>
+                        ))}
+                    </ul>
+                </BracketContainer>
             </ResumeContainer>
         </GlobalBackground>
     </>

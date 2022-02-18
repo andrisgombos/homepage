@@ -40,7 +40,6 @@ const Navbar = styled.div`
 
     li {
         display: inline-block;
-        padding-left: 0;
         transition: all 0.2s ease;
         border-left: 2px solid #F5DF4E;
         padding-left: 1em;

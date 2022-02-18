@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ExperienceContainer = styled.div`
+const SchoolContainer = styled.div`
     white-space: pre-wrap;
     margin-top: 1em;
 
@@ -28,14 +28,13 @@ const ExperienceContainer = styled.div`
 `
 
 
-const Experience = ({data} : {data: any}) => (
+const Degree = ({data} : {data: any}) => (
     <>
-        <ExperienceContainer>
-            <h4><a target='_blank' rel='noreferrer' href={data.link}>{data.company}</a> - {data.position}</h4>
-            <p>{data.date}</p>
-            <p>{data.points}</p>
-        </ExperienceContainer>
+        <SchoolContainer>
+            <h4><a target='_blank' rel='noreferrer' href={data.link}>{data.school}</a> - {data.degree}</h4>
+            <p>{data.year}</p>
+        </SchoolContainer>
     </>
 )
 
-export default Experience;
+export default Degree;
