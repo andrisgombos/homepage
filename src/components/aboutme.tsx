@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from './header';
+import { DataContainer, GlobalBackground } from '../styles/globalstyles';
 
 const AboutContainer = styled.div`
     height: 100vh;
@@ -13,12 +14,14 @@ const AboutContainer = styled.div`
 const Aboutme = () => (
     <>
         <Header/>
-        <AboutContainer>
-            <div>About Me
+        <GlobalBackground>
+            <DataContainer>
+                <div>About Me
                 <p>Elso paragraph</p>
                 <p>Masodik paragraph</p>
-            </div>
-        </AboutContainer>
+                </div>
+            </DataContainer>
+        </GlobalBackground>
     </>
 );
 

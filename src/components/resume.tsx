@@ -48,6 +48,15 @@ const SkillsMap = styled.div`
     flex-wrap: wrap;
 `
 
+const TitleContainer = styled.div`
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+
 const Resume = () => {
 
 
@@ -55,6 +64,9 @@ const Resume = () => {
      <>
         <Header/>
         <GlobalBackground>
+            <TitleContainer>
+                <h2>Resume</h2>
+            </TitleContainer>
             <ResumeContainer>
                 <BracketContainer>
                     <h3>Experience</h3>

@@ -24,8 +24,12 @@ const IntroContainer = styled.div`
     }
 
     h1 {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 3.3em;
+    }
+
+    h3 {
+
     }
 `
 const NavigationContainer = styled.div`
@@ -49,7 +53,7 @@ const Intro = () => {
                     <h3>check out my projects!</h3>
                 </NavigationContainer>
             </div>
-            <img src={me2} alt='photo of me'></img>
+            <img src={me2} alt='me'></img>
         </IntroContainer>
     </>
 
