@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Header from './header';
 import degrees from '../data/resume';
 import xp from '../data/experience'
-import skills from '../data/skills';
+import { skills1, skills2 } from '../data/skills'
 import { GlobalBackground, DataContainer } from '../styles/globalstyles';
 import Experience from './resume/experience';
 import Degree from './resume/degree';
@@ -31,6 +31,12 @@ const BracketContainer = styled.div`
     padding: 2em;
     display: flex;
     flex-direction: column;
+    align-items: start;
+`
+const SkillsBracketContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     align-items: start;
 
 `
@@ -63,10 +69,15 @@ const Resume = () => {
                     </MapContent>
                 </BracketContainer>
                 <BracketContainer>
-                    <h3>Skills</h3>
-                    <SkillsMap>
-                        {skills.map((s) => <StarRating rating={s.rating} key={s.rating} name={s.name} />)}
-                    </SkillsMap>
+                <h3>Skills</h3>
+                    <SkillsBracketContainer> 
+                        <SkillsMap>
+                            {skills1.map((s) => <StarRating rating={s.rating} key={s.rating} name={s.name} />)}
+                        </SkillsMap>
+                        <SkillsMap>
+                            {skills2.map((s) => <StarRating rating={s.rating} key={s.rating} name={s.name} />)}
+                        </SkillsMap>
+                    </SkillsBracketContainer>
                 </BracketContainer>
             </ResumeContainer>
         </GlobalBackground>

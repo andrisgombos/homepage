@@ -1,4 +1,4 @@
-const skills = [ 
+export const skills1 = [ 
     {
         name: 'React.js', 
         rating: 4,
@@ -16,6 +16,13 @@ const skills = [
         rating: 3,
     },
     {
+        name: 'Docker', 
+        rating: 3,
+    },
+]    
+
+export const skills2 = [
+    {
         name: 'HTML & CSS', 
         rating: 5,
     },
@@ -31,11 +38,7 @@ const skills = [
         name: 'Django', 
         rating: 2,
     },
-    {
-        name: 'Docker', 
-        rating: 3,
-    },
-]    
+
+]
     // 'Redux.js', 'JavaScript', 'TypeScript', 'SASS & Styled Components', 'HTML', 'Git & Github', 'Python', 'Django', 'Docker', 'Microsoft Office', 'SAP' ]
 
-export default skills;
