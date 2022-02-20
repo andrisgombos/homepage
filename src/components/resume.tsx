@@ -19,20 +19,27 @@ const ResumeContainer = styled.div`
         text-decoration: none;
     }
 
-    div {
-        display: flex;
-        flex-direction: column;
-
-    }
 `
+const MapContent = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
 const BracketContainer = styled.div`
     width: 100%;
     border-bottom: 4px solid #F5DF4E;
     padding: 2em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: start;
 
+`
+
+const SkillsMap = styled.div`
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 `
 
 const Resume = () => {
@@ -45,26 +52,21 @@ const Resume = () => {
             <ResumeContainer>
                 <BracketContainer>
                     <h3>Experience</h3>
-                    <div>
+                    <MapContent>
                         {xp.map((job) => <Experience data={job} key={job.company}/>)}
-                    </div>
+                    </MapContent>
                     </BracketContainer>
                 <BracketContainer>
                     <h3>Education</h3>
-                    <div>
+                    <MapContent>
                         {degrees.map((d) => <Degree data={d} key={d.school}/>)}
-                    </div>
+                    </MapContent>
                 </BracketContainer>
                 <BracketContainer>
                     <h3>Skills</h3>
-                    <div>
-                        {skills.map((s) => <StarRating rating={s} key={s.stars} />)}
-                    </div>
-                    {/* <ul>
-                        {skills.map((s) => (
-                            <li>{s}</li>
-                        ))}
-                    </ul> */}
+                    <SkillsMap>
+                        {skills.map((s) => <StarRating rating={s.rating} key={s.rating} name={s.name} />)}
+                    </SkillsMap>
                 </BracketContainer>
             </ResumeContainer>
         </GlobalBackground>
