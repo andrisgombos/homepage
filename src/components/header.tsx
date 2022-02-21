@@ -52,6 +52,7 @@ const Navbar = styled.div`
 `
 const StyledLink = styled(Link)`
     text-decoration: none;
+    color: #2c2c2c;
 
     &:focus, &:hover, &:visited, &:StyledLink, &:active {
         text-decoration: none;

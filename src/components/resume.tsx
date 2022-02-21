@@ -4,7 +4,7 @@ import Header from './header';
 import degrees from '../data/resume';
 import xp from '../data/experience'
 import { skills1, skills2 } from '../data/skills'
-import { GlobalBackground, DataContainer } from '../styles/globalstyles';
+import { GlobalBackground} from '../styles/globalstyles';
 import Experience from './resume/experience';
 import Degree from './resume/degree';
 import StarRating from './resume/starrating';

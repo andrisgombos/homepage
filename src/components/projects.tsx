@@ -40,6 +40,14 @@ const TitleContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #F5DF4E;;
+        background: #2c2c2c;
+        border-radius: 0.2em;
+        padding: 0.1em;
+    }
 `
 
 const Projects = () => (
@@ -48,7 +56,7 @@ const Projects = () => (
         <GlobalBackground>
             <TitleContainer>
                 <h2>Projects</h2>
-                <p>A glimpse look at some of my projects. All of them and more are accessible on my <a target='_blank' href='https://github.com/andrisgombos/'>Github</a> account.</p>
+                <p>A glimpse look at some of my projects. All of them and more are accessible on my <a target='_blank' rel='noreferrer' href='https://github.com/andrisgombos/'>Github</a> account.</p>
             </TitleContainer>
             <DataContainer>
                 <ProjectContainer>

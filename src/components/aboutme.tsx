@@ -19,13 +19,17 @@ const AboutContainer = styled.div`
 
     div {
         width: 85%;
+        padding-top: 2em;
+        padding-bottom: 2em;
 
     }
+
+
 
 `
 const TitleContainer = styled.div`
     width: auto;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
