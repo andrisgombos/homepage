@@ -1,11 +1,11 @@
 const xp = [
     {
         company: 'NatWest Services (Switzerland) Ltd',
-        position: 'IT Project Analyst',
+        position: 'IT Project Worker',
         location: 'Zurich',
         link: 'https://www.force-7.ch/',
         date: 'November 2021 - February 2022',
-        points: ''
+        points: 'Installing Hardwere and Softwere components, building up a complete new IT network'
     },
     {
         company: 'SIT Academye (formerly Propulsion Academy)',

@@ -33,6 +33,7 @@ const ContactContainer = styled.div`
     justify-content: center;
     border: 1px solid rgba(211, 211, 211, .5);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    border-radius: 0.5em;
 
     div {
         display: flex;

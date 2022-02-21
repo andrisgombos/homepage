@@ -13,6 +13,7 @@ const ResumeContainer = styled.div`
     height: 100%;
     width: 60vw;
     background-color: #F5F5F5;
+    border-radius: 0.5em;
 
     li {
         display: inline-block;
