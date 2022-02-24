@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/andrisgombos/homepage/static/css/main.fbb46978.css",
-    "main.js": "/andrisgombos/homepage/static/js/main.773c2f66.js",
+    "main.js": "/andrisgombos/homepage/static/js/main.4ab84716.js",
     "static/js/787.5c39024c.chunk.js": "/andrisgombos/homepage/static/js/787.5c39024c.chunk.js",
     "static/media/abme3.png": "/andrisgombos/homepage/static/media/abme3.d7251935918b3484ad17.png",
     "static/media/motion2.png": "/andrisgombos/homepage/static/media/motion2.34f2862582127470cfc5.png",
@@ -16,11 +16,11 @@
     "static/media/star_filled.svg": "/andrisgombos/homepage/static/media/star_filled.5ccbeee497c2be60f4ba77b945a4dd4d.svg",
     "index.html": "/andrisgombos/homepage/index.html",
     "main.fbb46978.css.map": "/andrisgombos/homepage/static/css/main.fbb46978.css.map",
-    "main.773c2f66.js.map": "/andrisgombos/homepage/static/js/main.773c2f66.js.map",
+    "main.4ab84716.js.map": "/andrisgombos/homepage/static/js/main.4ab84716.js.map",
     "787.5c39024c.chunk.js.map": "/andrisgombos/homepage/static/js/787.5c39024c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fbb46978.css",
-    "static/js/main.773c2f66.js"
+    "static/js/main.4ab84716.js"
   ]
 }
