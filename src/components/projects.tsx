@@ -78,7 +78,7 @@ const Projects = () => (
                 <ProjectContainer>
                     <h3>Photogram</h3>
                     <VideoContainer controls autoPlay src={photo}/>
-                    <p>A photo share & upload application where users can keep their pictures like a virtual photo album.</p>
+                    <p>A photo share & upload application where users can keep their pictures as a virtual photo album.</p>
                     <p>The application was built with React and JavaScript, the back end is provided by Google's Firebase.</p>
                 </ProjectContainer>
                 <ProjectContainer>
