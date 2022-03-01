@@ -63,9 +63,9 @@ const Aboutme = () => (
             <AboutContainer>
                 <div>
                     <p>My fascination with creating and building complex structures started at a young age: while other kids were climbing trees, I spent hours and hours on building plane models or coming up with tricks on my old Pentium 2.</p>
-                    <p>In the last couple of years, I spend most of my days in front of the computer. Driven by my curiosity (some can call it laziness), I started to optimize and automatize the everyday processes I was doing at my job. To be honest, I really enjoyed this role and with success my passion for innovation grew, always questioning old practices and constantly seeking for new solutions. This has lead directly to an interest in coding, especially web development.</p>
+                    <p>In the last couple of years, I spent most of my days in front of the computer. Driven by my curiosity (some can call it laziness), I started to optimize and automatize the everyday processes I was doing at my job. After a little reflection I realized, I really enjoyed this role and with success my passion for innovation grew, always questioning old practices and constantly seeking for new solutions. This has lead directly to an interest in coding, especially web development.</p>
                     <p>After several months of individual studies and an intensive bootcamp course, I am ready to take the industry challenges head-on. My current focus is to continuously improve myself, learning new technologies which keep forming the future of web development. This includes gaining experience in Cloud and Mobile Development, getting familiar with Progressive Web Apps. </p>
-                    <p>In my free time, I enjoy hiking, playing football and old PC games. Due to COVID my dream is to visit every continent is currently on hold, but hopefully not for long! </p>
+                    <p>In my free time, I enjoy hiking, playing football and old PC games. Due to covid my dream to visit every continent is currently on hold, but hopefully not for long! </p>
                 </div>    
             </AboutContainer>
         </AboutBackground>

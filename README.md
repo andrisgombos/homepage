@@ -1,10 +1,10 @@
 # My Personal Website
 
-see: https://andrisgombos.github.io/
+see: https://andrasgombos.com/
 
 ## Stack
 
-Built with React, Jamstack and TypeScript and deployed currently on github pages.
+Built with React, Jamstack and TypeScript and deployed currently on GitHub pages.
 
 ### Set up
 
