@@ -12,7 +12,6 @@ const { PUBLIC_URL } = process.env;
 function App() {
   return (
     <>
-    <BrowserRouter basename={PUBLIC_URL}>
       <Suspense fallback={<Aboutme />}>
         <Routes>
           <Route path="/" element={<Intro/>} />
@@ -22,7 +21,6 @@ function App() {
           <Route path="/resume" element={<Resume/>} />
         </Routes>
       </Suspense>
-    </BrowserRouter>
     </>
   );
 }
