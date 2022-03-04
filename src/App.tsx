@@ -4,7 +4,7 @@ import './App.css';
 import Aboutme from './components/aboutme';
 import Contact from './components/contact';
 import Projects from './components/projects';
-import Resume from './components/resume';
+import TabResume from './components/try';
 import Intro from './components/welcome';
 
 const { PUBLIC_URL } = process.env;
@@ -18,7 +18,7 @@ function App() {
           <Route path="/about" element={<Aboutme/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/projects" element={<Projects/>} />
-          <Route path="/resume" element={<Resume/>} />
+          <Route path="/resume" element={<TabResume/>} />
         </Routes>
       </Suspense>
     </>
