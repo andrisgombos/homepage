@@ -10,12 +10,10 @@ const Navbar = styled.div`
     display: flex;
     flex-direction: row;
     height: 7vh;
-    left: 0;
     align-items: center;
     justify-content: flex-start;
     // background-color: #F5F5F5;
-    position:relative;
-    float:left;
+
     
     span {
         display: inline;
@@ -25,6 +23,22 @@ const Navbar = styled.div`
         font-size: 1em;
         position:relative;
         float:left;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            bottom: 0;
+            margin: -5px 0;
+            background-color: #F5DF4E;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+        }
+        &:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
     }
 
     ul {
@@ -33,9 +47,6 @@ const Navbar = styled.div`
         display: flex;
         justify-content: space-around;
         list-style: none;
-        position:relative;
-        float:left;
-        
         }
 
     li {
@@ -43,12 +54,29 @@ const Navbar = styled.div`
         transition: all 0.2s ease;
         border-left: 2px solid #F5DF4E;
         padding-left: 1em;
-        position:relative;
-        float:left;
-        
+        border-bottom: 3px solid transparent;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            bottom: 0;
+            margin: -5px 0;
+            background-color: #F5DF4E;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+        }
+        &:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
     }
 
-    
+    div {
+
+    }
 `
 const StyledLink = styled(Link)`
     text-decoration: none;
